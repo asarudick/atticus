@@ -1,0 +1,33 @@
+{
+    "tracks": [
+        { "id": 1, "title": "Summer's Eve", "albumId": 1 }
+    ],
+    "artists": [
+        { 
+            "id": 1, 
+            "name": "Jimmy Puddles", 
+            "albums": [
+                { 
+                    "id": 1, 
+                    "title": "Better Days", 
+                    "tracks": [
+                        { "id": 1, "title": "Summer's Eve", "albumId": 1 }
+                    ]
+                }
+            ] 
+        }
+    ],
+    "albums": [
+        { 
+            "id": 1, 
+            "title": "Better Days", 
+            "artist": { 
+                "id": 1, 
+                "name": "Jimmy Puddles" 
+            },
+            "tracks": [
+                { "id": 1, "title": "Summer's Eve"}
+            ]
+        }
+    ]
+}
