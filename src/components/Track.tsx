@@ -19,6 +19,7 @@ export default function Track() {
 
     return (
         <div>
+            <div>{track && track.title}</div>
             {
                 track
                 ?
