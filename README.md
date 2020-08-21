@@ -1,3 +1,23 @@
+# Features
+
+This is a absolutely barebones music player application. It plays a single album, with two songs, as enumerated in api/db.json. There's very little styling, no tests, and currently no network request error handling.
+
+If time were an unlimited resource, additional functionality would be prioritized as such:
+- Network error handling
+- Tests
+- Artist album listing
+- Track queueing / Local, session-based playlists.
+- Playlist support (playing an artist, album, created playlist)
+- Sorting
+- Search
+- Styles
+
+# Server
+
+Read api/README.md for instructions on starting the server.
+
+# Client
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

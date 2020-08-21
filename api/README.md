@@ -2,7 +2,7 @@
 ## Usage
 
 `npm i json-server -g` to install the server
-`json-server --watch api/db.json` to start the RESTful API
+`json-server --watch api/db.json --port 3001` to start the RESTful API
 
 MVP:
 
