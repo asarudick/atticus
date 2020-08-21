@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { Track as TrackData } from '../types/Track';
-import './Track.css';
+import './Play.css';
 
-export default function Track() {
+export default function Play() {
     const { id } = useParams();
     const [track, setTrack] = useState<TrackData | undefined>();
     
@@ -19,7 +19,7 @@ export default function Track() {
     }, [id]);
 
     return (
-        <div className="Track">
+        <div className="Play">
             <div>{track && track.title}</div>
             {
                 track
