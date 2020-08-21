@@ -1,0 +1,38 @@
+.Album {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.Album__title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.Album li, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Album li {
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Album ul {
+    margin-top: 30px;
+}
+
+.Album__track {
+    margin-left: 20px;
+}
+
+.Album__track__number {
+    margin-right: 8px;
+}
+
+a { display: inline }

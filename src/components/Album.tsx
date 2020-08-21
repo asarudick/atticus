@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { Album as AlbumData } from '../types/Album';
 import { Track as TrackData } from '../types/Track';
-import './Track.css';
+import './Album.css';
+import { Track } from './Track';
+import { Link } from 'react-router-dom';
 
 export default function Album() {
     const { id } = useParams();
@@ -20,13 +22,21 @@ export default function Album() {
     }, [id]);
 
     return (
-        <div className="album">
-            <div>{album && album.title}</div>
-    <div>{album?.tracks.map((track: TrackData) => {
-        
-    })}
-    
-    </div>
+        <div className="Album">
+            <div className="Album__title">{album && album.title}</div>
+            <ul className="Album__tracks">
+                {album?.tracks.map((t: TrackData, i: number) => 
+                    <>
+                        <Link to={{
+                            pathname: `/play/${t.id}`
+                        }} >
+                                <li>
+                                    <span className="Album__track__number">{i}</span> <Track key={t.id} title={t.title} />
+                                </li>
+                        </Link>
+                    </>
+                )}
+            </ul>
     </div>
     )
 }
